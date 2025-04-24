@@ -46,11 +46,11 @@ const MobileNavBar = ({ handleClose }) => {
       style={{zIndex: 9999}}
     >
       <div className='flex flex-col justify-center h-screen items-center gap-5'>
-        <p className='font-mont text-[18px] tracking-[1px] p-[15px] cursor-pointer hover:text-[#3A3238] uppercase font-medium text-white'><a href='#home'>Home</a></p>
-        <p className='font-mont text-[18px] tracking-[1px] p-[15px] cursor-pointer hover:text-[#3A3238] uppercase font-medium text-white'><a href='#about'>About</a></p>
-        <p className='font-mont text-[18px] tracking-[1px] p-[15px] cursor-pointer hover:text-[#3A3238] uppercase font-medium text-white'><a href='#services'>Services</a></p>
-        <p className='font-mont text-[18px] tracking-[1px] p-[15px] cursor-pointer hover:text-[#3A3238] uppercase font-medium text-white'><a href='#membership'>Membership</a></p>
-        <p className='font-mont text-[18px] tracking-[1px] p-[15px] cursor-pointer hover:text-[#3A3238] uppercase font-medium text-white'><a href='#contact'>Contact</a></p>
+        <p onClick={handleClose} className='font-mont text-[18px] tracking-[1px] p-[15px] cursor-pointer uppercase font-medium text-white'><a href='#home'>Home</a></p>
+        <p onClick={handleClose} className='font-mont text-[18px] tracking-[1px] p-[15px] cursor-pointer uppercase font-medium text-white'><a href='#about'>About</a></p>
+        <p onClick={handleClose} className='font-mont text-[18px] tracking-[1px] p-[15px] cursor-pointer uppercase font-medium text-white'><a href='#services'>Services</a></p>
+        <p onClick={handleClose} className='font-mont text-[18px] tracking-[1px] p-[15px] cursor-pointer uppercase font-medium text-white'><a href='#membership'>Membership</a></p>
+        <p onClick={handleClose} className='font-mont text-[18px] tracking-[1px] p-[15px] cursor-pointer uppercase font-medium text-white'><a href='#contact'>Contact</a></p>
       </div>
     </div>
   )
