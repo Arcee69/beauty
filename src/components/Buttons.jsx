@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaArrowRight } from 'react-icons/fa'
 
-const Buttons = ({ width, text }) => {
+const Buttons = ({ width, text, link }) => {
   return (
     <button
         type='button'
@@ -10,7 +10,9 @@ const Buttons = ({ width, text }) => {
         }}
         className={`rounded-[50px] w-[${width}] hover:translate-y-[-3px] gap-2 h-[55.19px] transition-all duration-300 ease-in p-5 inline-flex items-center justify-center bg-[linear-gradient(135deg,#FF8FAB_0%,#FF2D6F_100%)] tracking-[1px]`}
     >
-        <p className='text-white font-semibold text-base font-mont uppercase'>{text}</p>
+        <p className='text-white font-semibold text-base font-mont uppercase'>
+          <a href={link}>{text}</a>
+        </p>
         <FaArrowRight className='text-[#fff] font-[900]' />
     </button>
   )

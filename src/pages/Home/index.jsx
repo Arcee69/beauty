@@ -159,6 +159,7 @@ const Home = () => {
                 <Buttons 
                     width="w-[164px]" 
                     text="Explore" 
+                    link='#membership'
                 />
             </div>
         </section>
@@ -192,6 +193,7 @@ const Home = () => {
                         <Buttons 
                             width="w-[214.5px]" 
                             text="Our Services" 
+                            link='#services'
                         />
                     </div>
                     <img 
@@ -258,6 +260,7 @@ const Home = () => {
                             <Buttons 
                                 width={"w-[200px]"}
                                 text="Join Now"
+                                link="https://docs.google.com/forms/d/e/1FAIpQLSdan5M3VsAsFEWS0slkM3MIk2ZUzOI2pb9xEuVDtqtp5JDSaQ/viewform"
                             />
                         </div>
                     </div>
@@ -287,6 +290,7 @@ const Home = () => {
                             <Buttons 
                                 width={"w-[200px]"}
                                 text="Join Now"
+                                link="https://docs.google.com/forms/d/e/1FAIpQLSdan5M3VsAsFEWS0slkM3MIk2ZUzOI2pb9xEuVDtqtp5JDSaQ/viewform"
                             />
                         </div>
                     </div>
@@ -308,6 +312,7 @@ const Home = () => {
                             <Buttons 
                                 width={"w-[200px]"}
                                 text="Join Now"
+                                link="https://docs.google.com/forms/d/e/1FAIpQLSdan5M3VsAsFEWS0slkM3MIk2ZUzOI2pb9xEuVDtqtp5JDSaQ/viewform"
                             />
                      
                     </div>
@@ -371,13 +376,21 @@ const Home = () => {
                 </div>
                 <div className='flex gap-[15px] items-center'>
                     <div className="group w-[45px] h-[45px] rounded-full flex items-center justify-center bg-[#FFF2F6] transition-all duration-300 hover:bg-[#ff2d6fe3] hover:translate-y-[-8px]">
-                        <FaInstagram className='text-[#ff2d6fe3] w-5 h-5 group-hover:text-white transition-colors duration-300' />
+                        <FaInstagram 
+                            onClick={() => window.open("https://www.instagram.com/prettyonrepeat/")}
+                            className='text-[#ff2d6fe3] w-5 h-5 group-hover:text-white transition-colors duration-300' />
                     </div>
                     <div className="group w-[45px] h-[45px] rounded-full flex items-center justify-center bg-[#FFF2F6] transition-all duration-300 hover:bg-[#ff2d6fe3] hover:translate-y-[-8px]">
-                        <FaTwitter className='text-[#ff2d6fe3] w-5 h-5 group-hover:text-white transition-colors duration-300' />
+                        <FaTwitter 
+                            onClick={() => window.open("https://x.com/prettyonrepeat")}
+                            className='text-[#ff2d6fe3] w-5 h-5 group-hover:text-white transition-colors duration-300' 
+                        />
                     </div>
                     <div className="group w-[45px] h-[45px] rounded-full flex items-center justify-center bg-[#FFF2F6] transition-all duration-300 hover:bg-[#ff2d6fe3] hover:translate-y-[-8px]">
-                        <FaTiktok className='text-[#ff2d6fe3] w-5 h-5 group-hover:text-white transition-colors duration-300' />
+                        <FaTiktok 
+                            onClick={() => window.open("https://www.tiktok.com/@prettyonrepeat_")}
+                            className='text-[#ff2d6fe3] w-5 h-5 group-hover:text-white transition-colors duration-300' 
+                        />
                     </div>
                 </div>
             </div>
