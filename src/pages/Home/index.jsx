@@ -1,6 +1,6 @@
 import React from 'react'
 import Buttons from '../../components/Buttons'
-import { FaCut, FaEnvelope, FaEye, FaHandSparkles, FaInstagram, FaMapMarkerAlt, FaPaintBrush, FaSpa, FaTiktok, FaTwitter } from 'react-icons/fa'
+import { FaCut, FaEnvelope, FaEye, FaHandSparkles, FaInstagram, FaClock, FaMapMarkerAlt, FaPaintBrush, FaSpa, FaTiktok, FaTwitter } from 'react-icons/fa'
 import { FaWandMagic, FaPhone } from 'react-icons/fa6'
 
 
@@ -144,14 +144,14 @@ const Home = () => {
                 width:"100%",
               
             }}
-            className='w-full min-h-[80vh] pt-[120px] pb-[60px] px-0 flex items-center justify-center'
+            className='w-full min-h-[85vh] lg:min-h-[80vh] pt-[120px] pb-[60px] px-5 lg:px-0 flex items-center justify-center'
         >
-            <div className='bg-[#ffffffcc] mx-auto w-[800px] p-[30px] h-[413px] rounded-[20px] border border-[#ff8fab33] flex flex-col items-center gap-[25px]'>
-                <h1 className='font-playfair text-[52px] text-center leading-[1.2] font-semibold text-[#3A3238]'>
+            <div className='bg-[#ffffffcc] mx-auto lg:w-[800px] p-[30px] lg:h-[413px] rounded-[20px] border border-[#ff8fab33] flex flex-col items-center gap-[25px]'>
+                <h1 className='font-playfair text-[32px] lg:text-[52px] text-center leading-[1.2] font-semibold text-[#3A3238]'>
                     <span className='text-[#ff2d6fe3] block'>Pretty On Repeat</span>
                     Make Beauty A Lifestyle
                 </h1>
-                <p className='italic pitch text-[#3A3238] text-[18px] leading-[1.7] text-center font-mont tracking-[1px]'>
+                <p className='italic pitch text-[#3A3238] text-base lg:text-[18px] leading-[1.7] text-center font-mont tracking-[1px]'>
                     Welcome to Pretty On Repeat, 
                     the essence of luxury beauty, one exclusive subscription for flawless nails, hair, lashes, makeup, 
                     and spa indulgence. Because beauty is not a one-time thing, it's a lifestyle.
@@ -165,20 +165,25 @@ const Home = () => {
 
         {/* About */}
         <section id='about' className='w-full py-[60px] px-0 flex items-center justify-center '>
-            <div className='w-[80%] mx-auto flex flex-col items-center gap-[40px]'>
+            <div className='w-[90%] lg:w-[80%] mx-auto flex flex-col items-center gap-[40px]'>
                 <div className='flex flex-col items-center gap-4'>
-                    <p className='text-[40px] font-playfair font-semibold text-[#3A3238]'>About Us</p>
+                    <p className='text-[32px] lg:text-[40px] font-playfair font-semibold text-[#3A3238]'>About Us</p>
                     <div className='h-[1.5px] w-[50px] bg-[#FF2D6F] rounded'></div>
                 </div>
-                <div className="flex items-center gap-[60px]">
-                    <div className='flex flex-col w-6/12 gap-[15px] items-start'>
-                        <p className='font-semibold font-playfair text-[#3A3238] text-[32px]'>Your Beauty, Our Passion</p>
-                        <p className='font-mont leading-[1.7] text-[#3A3238] text-base'>
+                <div className="flex flex-col lg:flex-row items-center gap-[60px]">
+                    <img 
+                        src="https://res.cloudinary.com/code-idea/image/upload/v1743288664/stylist-woman-taking-care-her-client-afro-hair_e92hem.jpg" 
+                        alt="Pretty On Repeat Salon" 
+                        className=' lg:hidden  rounded-[20px] transition-all duration-500 ease-in-out hover:scale-105' 
+                    />
+                    <div className='flex flex-col items-center lg:w-6/12 gap-[15px] lg:items-start'>
+                        <p className='font-semibold font-playfair text-[#3A3238] text-[26px] lg:text-[32px]'>Your Beauty, Our Passion</p>
+                        <p className='font-mont leading-[1.7] text-[#3A3238] text-center lg:text-left text-base'>
                             At Pretty On Repeat, we believe that beauty should be effortless, accessible, and consistent.
                             Our luxurious salon offers a curated selection of beauty services designed to keep you looking
                             and feeling your best every day.
                         </p>
-                        <p className='font-mont leading-[1.7] text-[#3A3238] text-base'>
+                        <p className='font-mont leading-[1.7] text-[#3A3238] text-center lg:text-left text-base'>
                             Founded in 2025, we've revolutionized the beauty industry with our innovative subscription 
                             model that takes the hassle out of maintaining your glam. Whether you need a quick touch-up 
                             or a full transformation, our team of expert stylists and aestheticians are here to make 
@@ -192,7 +197,7 @@ const Home = () => {
                     <img 
                         src="https://res.cloudinary.com/code-idea/image/upload/v1743288664/stylist-woman-taking-care-her-client-afro-hair_e92hem.jpg" 
                         alt="Pretty On Repeat Salon" 
-                        className='w-6/12 rounded-[20px] transition-all duration-500 ease-in-out hover:scale-105' 
+                        className='hidden lg:block w-6/12 rounded-[20px] transition-all duration-500 ease-in-out hover:scale-105' 
                     />
                 </div>
             </div>
@@ -200,12 +205,12 @@ const Home = () => {
 
         {/* Our Services */}
         <section id='services' className='bg-[#FFF2F6] flex items-center py-[60px] gap-[40px]'>
-            <div className='w-[80%] mx-auto flex flex-col items-center gap-[40px]'>
+            <div className='w-[90%] lg:w-[80%] mx-auto flex flex-col items-center gap-[40px]'>
                 <div className='flex flex-col items-center gap-4'>
-                    <p className='text-[40px] font-playfair font-semibold text-[#3A3238]'>Our Services</p>
+                    <p className='text-[32px] lg:text-[40px] font-playfair font-semibold text-[#3A3238]'>Our Services</p>
                     <div className='h-[1.5px] w-[50px] bg-[#FF2D6F] rounded'></div>
                 </div>
-                <div className='grid grid-cols-3 gap-5 w-full'>
+                <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 w-full'>
                     {
                         services.map((service) => (
                             <div key={service.id} className='rounded-[15px] hover:translate-y-[-10px] cursor-pointer transition-all duration-300 ease-in bg-[#fff] py-[30px] px-5 flex flex-col border border-[#ff8fab33] items-center justify-center'>
@@ -225,16 +230,16 @@ const Home = () => {
         
         {/* Membership Plans */}
         <section id='membership' className='w-full py-[60px] px-0 flex items-center justify-center'>
-            <div className='w-[80%] mx-auto flex flex-col items-center gap-[40px]'>
+            <div className='w-[90%] lg:w-[80%] mx-auto flex flex-col items-center gap-[40px]'>
                 <div className='flex flex-col items-center gap-4'>
-                    <p className='text-[40px] font-playfair font-semibold text-[#3A3238]'>Membership Plans</p>
+                    <p className='text-[32px] lg:text-[40px] font-playfair font-semibold text-[#3A3238]'>Membership Plans</p>
                     <div className='h-[2px] w-[50px] bg-[#FF2D6F] rounded'></div>
                 </div>
-                <p className='text-base font-mont text-[#3A3238] w-[700px] leading-[1.7] text-center'>
+                <p className='text-base font-mont text-[#3A3238] lg:w-[700px] leading-[1.7] text-center'>
                     Choose the perfect beauty subscription to keep you looking flawless all month long. 
                     All plans include priority booking and exclusive member perks.
                 </p>
-                <div className='grid grid-cols-3 gap-[25px] w-full'>
+                <div className='grid grid-cols-1 lg:grid-cols-3 gap-[25px] w-full'>
                     <div className='rounded-[15px] bg-[#FFF2F6] py-[30px] px-5 border relative border-[#ff8fab4d] flex flex-col items-center '>
                         <div className='absolute w-[95%] h-[5px]  bg-gradient-to-br from-[#FF8FAB] to-[#FF2D6F] top-0'></div>
                         <p className='text-[24px] mb-3 pt-2.5 font-semibold font-playfair text-[#ff2d6fe3]'>The Snatched Starter</p>
@@ -249,7 +254,7 @@ const Home = () => {
                                 ))
                             }
                         </div>
-                        <div className='absolute bottom-8'>
+                        <div className='lg:absolute lg:bottom-8'>
                             <Buttons 
                                 width={"w-[200px]"}
                                 text="Join Now"
@@ -278,7 +283,7 @@ const Home = () => {
                                 ))
                             }
                         </div>
-                        <div className='absolute bottom-8'>
+                        <div className='lg:absolute lg:bottom-8'>
                             <Buttons 
                                 width={"w-[200px]"}
                                 text="Join Now"
@@ -312,25 +317,25 @@ const Home = () => {
 
         {/* Testimonials */}
         <section  className='w-full py-[60px] px-0 flex items-center justify-center bg-[#FFF2F6]'>
-            <div className='w-[80%] mx-auto flex flex-col items-center gap-[40px]'>
+            <div className='w-[90%] lg:w-[80%] mx-auto flex flex-col items-center gap-[40px]'>
                 <div className='flex flex-col items-center gap-4'>
-                    <p className='text-[40px] font-playfair font-semibold text-[#3A3238]'>Client Love</p>
-                    <div className='h-[1.5px] w-[50px] bg-[#FF2D6F] rounded'></div>
+                    <p className='text-[32px] lg:text-[40px] font-playfair font-semibold text-[#3A3238]'>Client Love</p>
+                    <div className='h-[4px] w-[60px] bg-[#FF2D6F] rounded'></div>
                 </div>
                 <div 
                     style={{
                         boxShadow: "0 5px 15px rgba(251, 111, 146, 0.1)"
                     }}
-                    className='bg-[#fff] rounded-[15px] p-[30px]  flex items-center flex-col w-[800px] border border-[#ff8fab33]'
+                    className='bg-[#fff] rounded-[15px] p-[30px]  flex items-center flex-col lg:w-[800px] border border-[#ff8fab33]'
                 >
                     <img 
                         src="https://res.cloudinary.com/code-idea/image/upload/v1743288669/close-up-hairdresser-shop-instruments_bizpqa.jpg"
                         alt=''
                         className='w-[70px] h-[70px] rounded-[50px] mb-[15px] object-cover border-[3px] border-[#FF8FAB]'
                     />
-                    <p className='font-playfair font-semibold font-mont text-[18px] text-[#3A3238]'>Jessica</p>
-                    <p className='client-title text-[15px] mb-[15px] italic mb-[15px] text-[#ff2d6fe3]'>Luxury On Repeat Member</p>
-                    <p className='text-[#3A3238] text-[15px] text-center client-content leading-[1.7] text-center font-mont'>
+                    <p className='font-playfair font-semibold mb-[5px] text-[18px] text-[#3A3238]'>Jessica</p>
+                    <p className='client-title text-[15px] mb-[15px] italic font-mont  text-[#ff2d6fe3]'>Luxury On Repeat Member</p>
+                    <p className='text-[#3A3238] text-[15px] client-content italic leading-[1.7] text-center font-mont'>
                         Pretty On Repeat has completely transformed my beauty routine. No more scrambling 
                         for last-minute appointments - I'm always camera ready thanks to my membership. 
                         The Luxury plan is worth every penny!
@@ -343,7 +348,7 @@ const Home = () => {
         <section id='contact' className='w-full py-[60px] px-0 flex items-center justify-center bg-[#FFF]'>
             <div className='w-[80%] mx-auto flex flex-col items-center gap-[40px]'>
                 <div className='flex flex-col items-center gap-4'>
-                    <p className='text-[40px] font-playfair font-semibold text-[#3A3238]'>Contact Us</p>
+                    <p className='text-[32px] lg:text-[40px] font-playfair font-semibold text-[#3A3238]'>Contact Us</p>
                     <div className='h-[1.5px] w-[50px] bg-[#FF2D6F] rounded'></div>
                 </div>
                 <div className='flex flex-col items-center gap-3'>
@@ -360,7 +365,7 @@ const Home = () => {
                         <p className='font-mont text-base text-[#3A3238]'>hello@prettyonrepeat.com</p>
                     </div>
                     <div className='flex items-center gap-3'>
-                        <FaEnvelope className='w-[25px] text-[18px] text-[#ff2d6fe3]' /> 
+                        <FaClock  className='w-[25px] text-[18px] text-[#ff2d6fe3]' /> 
                         <p className='font-mont text-base text-[#3A3238]'>Mon-Sat: 9am-8pm</p>
                     </div>
                 </div>
